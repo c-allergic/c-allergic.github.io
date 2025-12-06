@@ -1,0 +1,56 @@
+baseURL = "https://c-allergic.github.io/" # Change to your real domain when deploying
+languageCode = "en"
+title = "Sheldon LI"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+enableInlineShortcodes = true
+
+# Menu Configuration
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 20
+
+[params]
+env = "production"
+description = "This is my personal blog and homepage"
+author = "Li Xiaofeng"
+defaultTheme = "auto" # Automatically follow system dark/light mode
+ShowReadingTime = true    # Show reading time
+ShowShareButtons = true   # Show share buttons
+ShowPostNavLinks = true   # Show previous/next post
+ShowBreadCrumbs = true    # Show breadcrumbs
+ShowCodeCopyButtons = true # Show code copy button
+
+# --- Core: Homepage Profile Mode ---
+[params.profileMode]
+enabled = true
+title = "Hi, I'm Li Xiaofeng 👋" # You can write your name here
+subtitle = "3rd Year Undergrat In HKUST(GZ), Trustworthy AI, Coding"
+imageUrl = "images/avatar.png" # Replace with your avatar image link (local images go in static/img/, write /img/xxx.jpg)
+imageTitle = "Avatar"
+imageWidth = 200
+imageHeight = 200
+
+
+# --- Social Links (displayed below profile) ---
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/c-allergic"
+
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:xil683@connect.hkust-gz.edu.cn"
+
+[markup.goldmark.renderer]
+unsafe = true
