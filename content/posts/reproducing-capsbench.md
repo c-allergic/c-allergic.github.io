@@ -13,7 +13,7 @@ Automated image captioning has come a long way, but evaluation hasn't kept up. S
 
 ## CapsBench: A Closer Look
 
-PGV3's **CapsBench** is one of the most comprehensive efforts to benchmark caption evaluation metrics. It tests evaluators across multiple dimensions: object hallucination, attribute accuracy, relationship correctness, and more. I've been reproducing CapsBench to understand its strengths and — more importantly — where it breaks down.
+[PGV3](https://arxiv.org/abs/2409.10695)'s **CapsBench** is one of the most comprehensive efforts to benchmark caption evaluation metrics. It tests evaluators across multiple dimensions: object hallucination, attribute accuracy, relationship correctness, and more. I've been reproducing CapsBench to understand its strengths and — more importantly — where it breaks down.
 
 ## Early Observations
 

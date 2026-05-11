@@ -10,7 +10,7 @@ I am a researcher at HKUST(GZ) working on **evaluation of generative models**. M
 
 ### 🔬 Current Research
 
-**Image Caption Evaluation.** I recently reproduced [PGV3](https://github.com/google-research-datasets/pgv3)'s **CapsBench** and am running systematic ablation experiments to identify its failure modes. Existing caption evaluation metrics correlate poorly with human judgment on fine-grained aspects like hallucination, style, and factual consistency. My goal is to design a **more comprehensive and accurate caption evaluation framework** that addresses these gaps.
+**Image Caption Evaluation.** I recently reproduced [PGV3](https://arxiv.org/abs/2409.10695)'s **CapsBench** and am running systematic ablation experiments to identify its failure modes. Existing caption evaluation metrics correlate poorly with human judgment on fine-grained aspects like hallucination, style, and factual consistency. My goal is to design a **more comprehensive and accurate caption evaluation framework** that addresses these gaps.
 
 **Generation Quality Evaluation.** Broader than captioning alone, I'm surveying the landscape of automated evaluation for generative models — from FID-era metrics to VLM-as-judge approaches and beyond. My curated survey, [awesome-generation-model-evaluation](https://github.com/c-allergic/awesome-generation-model-evaluation), tracks 20+ papers (2025–2026) across benchmarks, metrics, VLM-based judges, and domain-specific evaluation. If you work in this area, contributions are welcome.
 
