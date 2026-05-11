@@ -1,0 +1,8 @@
+{
+  "name": "c-allergic.github.io",
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-print-css": "^1.0.0"
+  }
+}

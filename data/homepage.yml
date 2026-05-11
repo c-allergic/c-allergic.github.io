@@ -1,0 +1,23 @@
+showcase:
+  image:
+    src: "images/showcase/showcase.png"
+    width: 400
+    height: 400
+    scale: 0.5
+    shape: ""
+  button:
+    URL: "https://github.com/c-allergic"
+    icon: "icon-square-github"
+  socialLinks: []
+
+about:
+  image:
+    src: "images/about/user-picture.png"
+    width: 400
+    height: 400
+    scale: 0.5
+  button:
+    URL: ""
+    icon: "icon-user"
+  v_align: "center"
+  h_align: "left"

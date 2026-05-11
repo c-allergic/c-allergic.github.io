@@ -1,66 +1,133 @@
-baseURL = "https://c-allergic.github.io/" # Change to your real domain when deploying
-languageCode = "en"
+baseURL = "https://c-allergic.github.io/"
 title = "Sheldon LI"
-theme = "PaperMod"
+locale = "en"
+theme = "adritian"
 
-enableRobotsTXT = true
-enableEmoji = true
-enableInlineShortcodes = true
+[pagination]
+  pagerSize = 5
 
-# Menu Configuration
-[[menu.main]]
-identifier = "about"
-name = "About Me"
-url = "/about/"
-weight = 10
+[outputs]
+  page = ["HTML"]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
 
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/posts/"
-weight = 20
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [params]
-env = "production"
-description = "Researcher in Image Caption Evaluation & Generation Quality Evaluation"
-author = "Li Xiaofeng"
-defaultTheme = "auto" # Automatically follow system dark/light mode
-ShowReadingTime = true    # Show reading time
-ShowShareButtons = true   # Show share buttons
-ShowPostNavLinks = true   # Show previous/next post
-ShowBreadCrumbs = true    # Show breadcrumbs
-ShowCodeCopyButtons = true # Show code copy button
+  title = "Sheldon LI"
+  description = "Researcher in Image Caption Evaluation & Generation Quality Evaluation"
+  themeColor = "#478079"
+  colorScheme = "slate"
+  homepageExperienceCount = 3
 
-# --- Core: Homepage Profile Mode ---
-[params.profileMode]
-enabled = true
-title = "Hi, I'm Li Xiaofeng 👋" # You can write your name here
-subtitle = "HKUST(GZ) • Image Caption Evaluation • Generation Quality Evaluation"
-imageUrl = "images/avatar.png" # Replace with your avatar image link (local images go in static/img/, write /img/xxx.jpg)
-imageTitle = "Avatar"
-imageWidth = 200
-imageHeight = 200
+  [params.seo]
+    siteName = "Sheldon LI"
+    siteDescription = "Researcher in Image Caption Evaluation & Generation Quality Evaluation at HKUST(GZ)"
 
+  [params.seo.person]
+    name = "Xiaofeng Li"
+    url = "https://c-allergic.github.io"
+    sameAs = ["https://github.com/c-allergic"]
+    sections = ["showcase", "about", "blog"]
 
-# --- Social Links (displayed below profile) ---
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/c-allergic"
+  [params.favicons]
 
+  [params.analytics]
+    vercelPageInsights = false
+    vercelAnalytics = false
+    [params.analytics.googleAnalytics]
+      code = ""
+      enabled = false
+    [params.analytics.googleTagManager]
+      code = ""
+      enabled = false
 
-[[params.socialIcons]]
-name = "email"
-url = "mailto:xil683@connect.hkust-gz.edu.cn"
+  [params.colorTheme.selector.disable]
+    footer = true
+    header = false
+    mobileHeader = false
 
-[[params.socialIcons]]
-name = "arxiv"
-title = "IP-Bench Paper"
-url = "https://arxiv.org/abs/2603.26154"
+  [params.navbarOverflow]
+    mode = "dropdown"
 
-[[params.socialIcons]]
-name = "cv"
-title = "Generation Eval Survey"
-url = "https://github.com/c-allergic/awesome-generation-model-evaluation"
+  [params.blog]
+    layout = "default"
+    narrowContent = true
+    showCategories = true
+    showRecentPosts = true
+    recentPostCount = 5
+    listStyle = "summary"
 
-[markup.goldmark.renderer]
-unsafe = true
+  [params.sharing]
+    bluesky = false
+    mastodon = false
+
+  [params.plugins]
+    [[params.plugins.css]]
+      URL = "css/adritian-icons.css"
+    [[params.plugins.js]]
+      URL = "js/rad-animations.js"
+    [[params.plugins.js]]
+      URL = "js/sticky-header.js"
+    [[params.plugins.js]]
+      URL = "js/library/fontfaceobserver.js"
+    [[params.plugins.scss]]
+      URL = "scss/adritian.scss"
+
+[languages]
+  [languages.en]
+    disabled = false
+    locale = "en"
+    direction = "ltr"
+    label = "English"
+    title = ""
+    weight = 0
+
+    [[languages.en.menus.header]]
+      name = "Home"
+      URL = "/"
+      weight = 1
+    [[languages.en.menus.header]]
+      name = "Blog"
+      URL = "/blog"
+      weight = 2
+    [[languages.en.menus.header]]
+      name = "GitHub"
+      URL = "https://github.com/c-allergic"
+      weight = 3
+
+    [[languages.en.menus.footer]]
+      name = "Home"
+      URL = "/"
+      weight = 1
+    [[languages.en.menus.footer]]
+      name = "Blog"
+      URL = "/blog"
+      weight = 2
+
+[build]
+  writeStats = true
+  [build.buildStats]
+    enabledFor = ["scss"]
+    disableClasses = false
+    disableIDs = false
+    disableTags = false
+    enable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    lineNos = false
+    noClasses = false
+    style = "github"
+
+[imaging]
+  resampleFilter = "Lanczos"
+  quality = 85
+  anchor = "Smart"

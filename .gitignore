@@ -1,2 +1,4 @@
 /public
+/node_modules
 push.sh
+.hugo_build.lock
