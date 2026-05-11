@@ -22,7 +22,7 @@ weight = 20
 
 [params]
 env = "production"
-description = "This is my personal blog and homepage"
+description = "Researcher in Image Caption Evaluation & Generation Quality Evaluation"
 author = "Li Xiaofeng"
 defaultTheme = "auto" # Automatically follow system dark/light mode
 ShowReadingTime = true    # Show reading time
@@ -35,7 +35,7 @@ ShowCodeCopyButtons = true # Show code copy button
 [params.profileMode]
 enabled = true
 title = "Hi, I'm Li Xiaofeng 👋" # You can write your name here
-subtitle = "3rd Year Undergrat In HKUST(GZ), Trustworthy AI, Coding"
+subtitle = "HKUST(GZ) • Image Caption Evaluation • Generation Quality Evaluation"
 imageUrl = "images/avatar.png" # Replace with your avatar image link (local images go in static/img/, write /img/xxx.jpg)
 imageTitle = "Avatar"
 imageWidth = 200
@@ -51,6 +51,16 @@ url = "https://github.com/c-allergic"
 [[params.socialIcons]]
 name = "email"
 url = "mailto:xil683@connect.hkust-gz.edu.cn"
+
+[[params.socialIcons]]
+name = "arxiv"
+title = "IP-Bench Paper"
+url = "https://arxiv.org/abs/2603.26154"
+
+[[params.socialIcons]]
+name = "cv"
+title = "Generation Eval Survey"
+url = "https://github.com/c-allergic/awesome-generation-model-evaluation"
 
 [markup.goldmark.renderer]
 unsafe = true

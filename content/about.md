@@ -2,27 +2,36 @@
 title = "About Me"
 +++
 
-### Hi there, I'm Sheldon LI 👋
+### Hi there, I'm Xiaofeng Li (Sheldon) 👋
 
-I am a researcher bridging the gap between **Theoretical Computer Science** and **Generative AI**.
-
-- My current research interests focus on **Trustworthy AI** and **Diffusion Models**, aiming to make generative models more robust, explainable, and safe.
-- Previously, I worked on **Problem Reductions** and **Scientific Computing** (specifically Tensor Networks), which gave me a strong foundation in computational complexity and algorithm design.
-- **Tech Stack**:
-  - **AI/ML**: PyTorch, Diffusion Models, LLMs
-  - **Scientific Computing**: Python，Julia, Typst
-  - **Theory**: Computational Complexity
-
-#### 🚀 Selected Projects
-* [**ImageProtection**](https://github.com/c-allergic/ImageProtectionBench): Integrates as many advarsarial attack algorithm on I2V diffusion model, providing simple and user-friendly interfaces for benchmarking.
-* [**ProblemReductions.jl**](https://github.com/GiggleLiu/ProblemReductions.jl): A library for computational problem reductions. See our paper: <a href="https://arxiv.org/abs/2501.00227" style="color: blue;">Programming guide for solving constraint satisfaction problems with tensor networks</a> for more details.
+I am a researcher at HKUST(GZ) working on **evaluation of generative models**. My current focus is on **Image Caption Evaluation** and **Generation Quality Evaluation** — tackling the question of how we can reliably and comprehensively measure what makes generated content good.
 
 ---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/c-allergic/c-allergic/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/c-allergic/c-allergic/output/github-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/c-allergic/c-allergic/output/github-snake.svg">
-</picture>
+### 🔬 Current Research
 
-![Top Langs](https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=c-allergic&show_icons=true&include_all_commits=true&langs_count=8&layout=compact&theme=dracula&role=OWNER,ORGANIZATION_MEMBER)
+**Image Caption Evaluation.** I recently reproduced [PGV3](https://github.com/google-research-datasets/pgv3)'s **CapsBench** and am running systematic ablation experiments to identify its failure modes. Existing caption evaluation metrics correlate poorly with human judgment on fine-grained aspects like hallucination, style, and factual consistency. My goal is to design a **more comprehensive and accurate caption evaluation framework** that addresses these gaps.
+
+**Generation Quality Evaluation.** Broader than captioning alone, I'm surveying the landscape of automated evaluation for generative models — from FID-era metrics to VLM-as-judge approaches and beyond. My curated survey, [awesome-generation-model-evaluation](https://github.com/c-allergic/awesome-generation-model-evaluation), tracks 20+ papers (2025–2026) across benchmarks, metrics, VLM-based judges, and domain-specific evaluation. If you work in this area, contributions are welcome.
+
+---
+
+### 📄 Publications
+
+- **IP-Bench: Benchmark for Image Protection Methods in Image-to-Video Generation Scenarios**  
+  Xiaofeng Li, Leyi Sheng, Zhen Sun, Zongmin Zhang, Jiaheng Wei, Xinlei He  
+  *arXiv 2026* — [[paper]](https://arxiv.org/abs/2603.26154) [[code]](https://github.com/c-allergic/ImageProtectionBench)  
+  The first systematic benchmark for evaluating image protection methods in I2V generation scenarios, covering 6 protection methods, 5 SOTA I2V models, and robustness against real-world preprocessing attacks.
+
+---
+
+### 🧰 Previous Work
+
+- [**ProblemReductions.jl**](https://github.com/GiggleLiu/ProblemReductions.jl) — A Julia library for computational problem reductions, with applications to tensor network solvers ([paper](https://arxiv.org/abs/2501.00227)).
+- [**ImageProtectionBench**](https://github.com/c-allergic/ImageProtectionBench) — Benchmarking toolkit for adversarial attack algorithms on I2V diffusion models.
+
+---
+
+### 📬 Contact
+
+Feel free to reach out for collaborations or discussions on generative model evaluation: **xil683@connect.hkust-gz.edu.cn**
