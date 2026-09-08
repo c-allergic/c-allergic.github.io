@@ -4,8 +4,8 @@ design:
   theme: classic
   page:
     size: us-letter
-    show_footer: false
-    show_top_note: false
+    show_footer: true
+    show_top_note: true
   colors:
     body: "#000000"
     name: "#004F90"
@@ -36,5 +36,6 @@ design:
     underline: false
     show_external_link_icon: true
   header:
+    photo_width: "3.5cm"
     connections:
       show_icons: true
