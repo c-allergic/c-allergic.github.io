@@ -36,6 +36,5 @@ design:
     underline: false
     show_external_link_icon: true
   header:
-    photo_width: "3.5cm"
     connections:
       show_icons: true
