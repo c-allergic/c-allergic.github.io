@@ -6,6 +6,7 @@ cv:
   email: xli683@connect.hkust-gz.edu.cn
   phone: +86 147 7150 6835
   website:
+  photo: "../assets/img/self.png"
   social_networks:
     - network: GitHub
       username: c-allergic
