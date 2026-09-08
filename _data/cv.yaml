@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema.json
+cv:
+  name: Xiaofeng Li
+  headline: AI Undergraduate · LLM Evaluation & Multimodal Perception
+  location: Guangzhou, China
+  email: xli683@connect.hkust-gz.edu.cn
+  phone: +86 147 7150 6835
+  website:
+  social_networks:
+    - network: GitHub
+      username: c-allergic
+  sections:
+    education:
+      - institution: The Hong Kong University of Science and Technology (Guangzhou)
+        area: Artificial Intelligence
+        degree: BSc
+        start_date: 2023-09
+        end_date: 2027-06
+        location: Guangzhou, China
+        summary:
+        highlights:
+          - "GPA: 3.6+/4.3"
+          - Dean's List, Spring 2025
+      - institution: RWTH Aachen University
+        area: Exchange Program
+        degree: Exchange Student
+        start_date: 2025-09
+        end_date: 2026-02
+        location: Aachen, Germany
+        summary:
+        highlights:
+          - One-semester study exchange in Germany
+    experience:
+      - position: Developer
+        company: Caption Evaluation Agent System (HiEval)
+        start_date: 2026-04
+        end_date: present
+        location:
+        summary:
+        highlights:
+          - "Built an LLM-agent-based caption evaluation system that hierarchically explores images from coarse to fine (region tree: ground → subdivide → decompose → match → commit → prune), verifying caption completeness against human-perception-aligned criteria and producing 3-D scores (P/R/F1, attributes, relations) with full decision traces — addressing the bias of surface-level element matching in existing benchmarks"
+          - "Automated the evaluation pipeline: produces fine-grained evaluation results and improvement suggestions without manual annotation, improving both efficiency and quality"
+          - "Overcame self-validation bias by building an independent grounding stack (GroundingDINO + SAM3 for objects, Mask2Former for background/stuff classes) that provides objective visual evidence"
+          - "Validated on four public benchmarks (CapsBench, CompreCap, CAPTURE, PerceptionRubrics) against 4 mainstream models (GPT-5.5, Claude Sonnet 4.5, Qwen3.5, Doubao Seed 2.1), evaluating 6600+ captions"
+    publications:
+      - date: 2026-03
+        title: "IPV-Bench: Benchmarking Image Protection Methods under Diverse Image-to-Video Generation Scenarios"
+        authors:
+          - "*Xiaofeng Li*"
+          - Leyi Sheng
+          - Yifan Zhao
+          - Zhen Sun
+          - Zongmin Zhang
+          - Jiaheng Wei
+          - Xinlei He
+        journal: arXiv:2603.26154 (Under review at AAAI 2027)
+        summary: The first systematic benchmark for image protection methods in image-to-video (I2V) generation scenarios — unifying evaluation protocols and generation settings, covering fidelity–effectiveness trade-offs, cross-model transfer, and robustness across diverse image domains, enabling reproducible and comparable evaluation.
+      - date: 2025-01
+        title: Programming Guide for Solving Constraint Satisfaction Problems with Tensor Networks
+        authors:
+          - Xuanzhao Gao
+          - "*Xiaofeng Li*"
+          - Jinguo Liu
+        journal: arXiv:2501.00227
+        summary: A practical programming guide demonstrating how to formulate and solve constraint satisfaction problems (e.g., graph coloring, SAT) with tensor-network-based methods, with reproducible Julia implementations.
+    awards:
+      - bullet: "Third Prize, Huawei Ascend Operator Challenge (S8), 2026"
+      - bullet: "Merit Award, Undergraduate Research Project Competition, HKUST(GZ), 2024"
+      - bullet: "Dean's List, HKUST(GZ), Spring 2025"
+    skills:
+      - label: Programming Languages
+        details: Python, Shell
+      - label: Deep Learning & LLMs
+        details: PyTorch, Transformers, HuggingFace, LLM APIs & inference engineering
+      - label: Computer Vision
+        details: GroundingDINO, SAM2/SAM3, Mask2Former
+      - label: Tools
+        details: Git/GitHub, Claude Code, Linux, PowerPoint
+    languages:
+      - bullet: "Chinese — Native"
+      - bullet: "English — IELTS 7.5"
