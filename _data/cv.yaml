@@ -70,7 +70,7 @@ cv:
           - Zongmin Zhang
           - Jiaheng Wei
           - Xinlei He†
-        journal: arXiv:2603.26154 (under review at AAAI 2027)
+        publisher: arXiv:2603.26154 (under review at AAAI 2027)
         url: https://arxiv.org/abs/2603.26154
         summary: The first systematic benchmark for image protection methods in image-to-video (I2V) generation scenarios — unifying evaluation protocols and generation settings, covering fidelity–effectiveness trade-offs, cross-model transfer, and robustness across diverse image domains. † Corresponding author.
       - date: 2025-01
@@ -79,13 +79,18 @@ cv:
           - Xuanzhao Gao
           - "*Xiaofeng Li*"
           - Jinguo Liu†
-        journal: arXiv:2501.00227
+        publisher: arXiv:2501.00227
         url: https://arxiv.org/abs/2501.00227
         summary: A practical programming guide demonstrating how to formulate and solve constraint satisfaction problems (e.g., graph coloring, SAT) with tensor-network-based methods, with reproducible Julia implementations. † Corresponding author.
     Awards:
-      - bullet: "Third Prize, Huawei Ascend Operator Challenge (S8), 2026"
-      - bullet: "Merit Award, Undergraduate Research Project Competition, HKUST(GZ), 2024"
-      - bullet: "Dean's List, HKUST(GZ), Spring 2025"
+      - title: Third Prize, Huawei Ascend Operator Challenge (S8)
+        date: "2026"
+      - title: Merit Award, Undergraduate Research Project Competition
+        awarder: HKUST(GZ)
+        date: "2024"
+      - title: Dean's List
+        awarder: HKUST(GZ)
+        date: "2025"
     Skills:
       - name: Programming Languages
         keywords:
