@@ -87,11 +87,23 @@ cv:
       - bullet: "Merit Award, Undergraduate Research Project Competition, HKUST(GZ), 2024"
       - bullet: "Dean's List, HKUST(GZ), Spring 2025"
     Skills:
-      - label: Programming Languages
-        details: Python, Shell
-      - label: Deep Learning & LLMs
-        details: PyTorch, Transformers, HuggingFace, LLM APIs & inference engineering
-      - label: Tools
-        details: Git/GitHub, Claude Code, Linux, PowerPoint
-      - label: Languages
-        details: Chinese (native), English (fluent)
+      - name: Programming Languages
+        keywords:
+          - Python
+          - Shell
+      - name: Deep Learning & LLMs
+        keywords:
+          - PyTorch
+          - Transformers
+          - HuggingFace
+          - LLM APIs & inference engineering
+      - name: Tools
+        keywords:
+          - Git/GitHub
+          - Claude Code
+          - Linux
+          - PowerPoint
+      - name: Languages
+        keywords:
+          - Chinese (native)
+          - English (fluent)
