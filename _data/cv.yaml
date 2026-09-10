@@ -28,7 +28,6 @@ cv:
         start_date: 2023-09
         end_date: 2027-06
         location: Guangzhou, China
-        summary:
         highlights:
           - "CGPA: 3.6+/4.3 (top 15%) | Machine Learning: A (top 15%) | Ethics, Privacy & Security in AI: A+"
       - institution: RWTH Aachen University
@@ -37,25 +36,24 @@ cv:
         start_date: 2025-09
         end_date: 2026-02
         location: Aachen, Germany
-        summary:
         highlights:
           - "Deep Learning (full marks)"
     Experience:
       - position: Developer
         company: High-Quality Image-Text Data Synthesis · Image-Caption Evaluation Agent
+        summary: Prof. Jiaheng Wei's Group · Huawei Collaboration (ongoing)
         start_date: 2026-04
         end_date: present
-        location: Prof. Jiaheng Wei's Group · Huawei Collaboration (ongoing)
-        summary:
+        location: Guangzhou, China
         highlights:
           - "First to apply an agent system to this task: designed and implemented a caption-precision evaluation scheme in which the agent understands an image hierarchically, from coarse to fine and aligned with human perception, and reconstructs a scene graph — enabling reference-free caption evaluation"
           - "Aligns caption units (objects, attributes, relations) with the hierarchical scene graph to judge whether a caption precisely and completely describes the image; the hierarchical decomposition and scene-graph reconstruction work well and reliably filter out hallucinated and attribute-mismatched captions"
       - position: Collaborator
         company: Long-Horizon Agent Trajectory Data-Synthesis Pipeline
+        summary: DeepWisdom
         start_date: 2026-08
         end_date: present
-        location: DeepWisdom
-        summary:
+        location: Shenzhen, China
         highlights:
           - "Surveyed and compared mainstream long-horizon agent benchmarks, distilling their trajectory data-synthesis schemes and their test-task complexity along steps, context, tools, and environment into a comparative analysis (covering 12+ synthetic-trajectory works)"
           - "Identified the limitations of existing benchmarks in data scale and real-execution environments, providing design guidance for how the pipeline should generate longer-horizon, more realistic trajectory data"
