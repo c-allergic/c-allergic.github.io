@@ -9,9 +9,18 @@ cv:
     - network: GitHub
       username: c-allergic
   sections:
-    Research Interests:
-      - "Large Language Models (LLMs): evaluation and trustworthiness — benchmark design, evaluation methodology, evidence-grounded verification"
-      - "Agents: long-horizon task solving, tool use, and evaluation-driven data synthesis and automation"
+    Interests:
+      - name: Large Language Models
+        keywords:
+          - evaluation and trustworthiness
+          - benchmark design
+          - evaluation methodology
+          - evidence-grounded verification
+      - name: Agents
+        keywords:
+          - long-horizon task solving
+          - tool use
+          - evaluation-driven data synthesis and automation
     Education:
       - institution: The Hong Kong University of Science and Technology (Guangzhou)
         area: Artificial Intelligence
