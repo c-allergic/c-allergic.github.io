@@ -9,10 +9,10 @@ cv:
     - network: GitHub
       username: c-allergic
   sections:
-    research interests:
+    Research Interests:
       - "Large Language Models (LLMs): evaluation and trustworthiness — benchmark design, evaluation methodology, evidence-grounded verification"
       - "Agents: long-horizon task solving, tool use, and evaluation-driven data synthesis and automation"
-    education:
+    Education:
       - institution: The Hong Kong University of Science and Technology (Guangzhou)
         area: Artificial Intelligence
         degree: BEng
@@ -31,7 +31,7 @@ cv:
         summary:
         highlights:
           - "Deep Learning (full marks)"
-    experience:
+    Experience:
       - position: Developer
         company: High-Quality Image-Text Data Synthesis · Image-Caption Evaluation Agent
         start_date: 2026-04
@@ -50,7 +50,7 @@ cv:
         highlights:
           - "Surveyed and compared mainstream long-horizon agent benchmarks, distilling their trajectory data-synthesis schemes and their test-task complexity along steps, context, tools, and environment into a comparative analysis (covering 12+ synthetic-trajectory works)"
           - "Identified the limitations of existing benchmarks in data scale and real-execution environments, providing design guidance for how the pipeline should generate longer-horizon, more realistic trajectory data"
-    publications:
+    Publications:
       - date: 2026-03
         title: "IPV-Bench: Benchmarking Image Protection Methods under Diverse Image-to-Video Generation Scenarios"
         authors:
@@ -73,11 +73,11 @@ cv:
         journal: arXiv:2501.00227
         url: https://arxiv.org/abs/2501.00227
         summary: A practical programming guide demonstrating how to formulate and solve constraint satisfaction problems (e.g., graph coloring, SAT) with tensor-network-based methods, with reproducible Julia implementations. † Corresponding author.
-    awards:
+    Awards:
       - bullet: "Third Prize, Huawei Ascend Operator Challenge (S8), 2026"
       - bullet: "Merit Award, Undergraduate Research Project Competition, HKUST(GZ), 2024"
       - bullet: "Dean's List, HKUST(GZ), Spring 2025"
-    skills:
+    Skills:
       - label: Programming Languages
         details: Python, Shell
       - label: Deep Learning & LLMs
