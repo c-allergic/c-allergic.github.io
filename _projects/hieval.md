@@ -1,20 +1,22 @@
 ---
 layout: page
-title: HiEval
-description: Agent-based caption evaluation system — hierarchical, perception-aligned, annotation-free
+title: Image-Caption Evaluation Agent
+description: The caption-precision gate of a high-quality image-text data synthesis pipeline — hierarchical, perception-aligned, reference-free
 img: assets/img/hieval.png
 importance: 1
 category: work
 ---
 
-## HiEval: An Agent-based Caption Evaluation System
+## Image-Caption Evaluation Agent (HiEval)
 
-Existing caption evaluation benchmarks mostly rely on surface-level element matching, which aligns poorly with human perception and introduces systematic bias when judging whether a caption fully and accurately describes an image. High-quality evaluation also depends on expensive human annotation.
+*Developer · Prof. Jiaheng Wei's Group (HKUST-GZ) · Huawei Collaboration · ongoing*
 
-**HiEval** addresses both problems with a tool-calling VLM agent:
+High-quality image-text data synthesis depends on being able to tell **whether a caption precisely and completely describes its image**. Existing caption evaluation benchmarks mostly rely on surface-level element matching, which aligns poorly with human perception and introduces systematic bias; high-quality evaluation also depends on expensive human annotation.
 
-- **Hierarchical, perception-aligned evaluation.** The agent explores an image from coarse to fine (region tree: *ground → subdivide → decompose → match → commit → prune*), recursively matching regions against caption units and producing a 3-dimensional score (P/R/F1, attributes, relations) with a fully explainable decision trace. This mirrors how humans perceive images — from the overall scene down to objects and their interactions — instead of pattern-matching surface elements.
-- **Automated, annotation-free evaluation.** The same exploration mechanism automatically produces fine-grained evaluation results and improvement suggestions, delivering high-quality assessment at a fraction of the cost of manual annotation.
-- **Objective visual evidence.** To avoid self-validation bias, HiEval grounds its judgment in an independent stack: GroundingDINO + SAM3 for objects and Mask2Former for background/stuff classes, which instance-level models cannot see (backgrounds cover ~38% of ground-truth content in common benchmarks).
+**My contribution** is the caption-precision gate of the pipeline: an agent-based evaluation module that decides whether a generated caption is accurate and complete enough to enter the curated training set.
 
-**Scale.** The system has been validated on four public benchmarks (CapsBench, CompreCap, CAPTURE, PerceptionRubrics) against four mainstream models (GPT-5.5, Claude Sonnet 4.5, Qwen3.5, Doubao Seed 2.1), evaluating 6600+ captions.
+- **First use of an agent system for this task.** The agent explores an image **hierarchically, from coarse to fine**, in a way that mirrors human perception: it decomposes the scene, subdivides regions, and verifies the caption layer by layer — instead of matching surface elements.
+- **Reference-free evaluation.** Because the agent grounds the caption's textual units (objects, attributes, relations) in the image itself, a caption can be judged **without any human-written reference**.
+- **Scene-graph reconstruction works well.** The hierarchical decomposition reconstructs an interpretable scene graph of the image, which reliably exposes **hallucinated and attribute-mismatched** captions — with an explainable trace of how each judgement was reached.
+
+The module therefore cuts annotation cost while raising data quality: only image-faithful captions flow downstream.

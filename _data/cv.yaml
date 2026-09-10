@@ -9,17 +9,19 @@ cv:
     - network: GitHub
       username: c-allergic
   sections:
+    research interests:
+      - "Large Language Models (LLMs): evaluation and trustworthiness — benchmark design, evaluation methodology, evidence-grounded verification"
+      - "Agents: long-horizon task solving, tool use, and evaluation-driven data synthesis and automation"
     education:
       - institution: The Hong Kong University of Science and Technology (Guangzhou)
         area: Artificial Intelligence
-        degree: BSc
+        degree: BEng
         start_date: 2023-09
         end_date: 2027-06
         location: Guangzhou, China
         summary:
         highlights:
-          - "GPA: 3.6+/4.3"
-          - Dean's List, Spring 2025
+          - "CGPA: 3.6+/4.3 (top 15%) | Machine Learning: A (top 15%) | Ethics, Privacy & Security in AI: A+"
       - institution: RWTH Aachen University
         area: Exchange Program
         degree: Exchange Student
@@ -28,23 +30,26 @@ cv:
         location: Aachen, Germany
         summary:
         highlights:
-          - One-semester study exchange in Germany
+          - "Deep Learning (full marks)"
     experience:
       - position: Developer
-        company: Caption Evaluation Agent System (HiEval)
+        company: High-Quality Image-Text Data Synthesis · Image-Caption Evaluation Agent
         start_date: 2026-04
         end_date: present
-        location:
+        location: Prof. Jiaheng Wei's Group · Huawei Collaboration (ongoing)
         summary:
         highlights:
-          - "Built an LLM-agent-based caption evaluation system that hierarchically explores images from coarse to fine (region tree: ground → subdivide → decompose → match → commit → prune), verifying caption completeness against human-perception-aligned criteria and producing 3-D scores (P/R/F1, attributes, relations) with full decision traces — addressing the bias of surface-level element matching in existing benchmarks"
-          - "Automated the evaluation pipeline: produces fine-grained evaluation results and improvement suggestions without manual annotation, improving both efficiency and quality"
-          - "Overcame self-validation bias by building an independent grounding stack (GroundingDINO + SAM3 for objects, Mask2Former for background/stuff classes) that provides objective visual evidence"
-          - "Validated on four public benchmarks (CapsBench, CompreCap, CAPTURE, PerceptionRubrics) against 4 mainstream models (GPT-5.5, Claude Sonnet 4.5, Qwen3.5, Doubao Seed 2.1), evaluating 6600+ captions"
-    awards:
-      - bullet: "Third Prize, Huawei Ascend Operator Challenge (S8), 2026"
-      - bullet: "Merit Award, Undergraduate Research Project Competition, HKUST(GZ), 2024"
-      - bullet: "Dean's List, HKUST(GZ), Spring 2025"
+          - "First to apply an agent system to this task: designed and implemented a caption-precision evaluation scheme in which the agent understands an image hierarchically, from coarse to fine and aligned with human perception, and reconstructs a scene graph — enabling reference-free caption evaluation"
+          - "Aligns caption units (objects, attributes, relations) with the hierarchical scene graph to judge whether a caption precisely and completely describes the image; the hierarchical decomposition and scene-graph reconstruction work well and reliably filter out hallucinated and attribute-mismatched captions"
+      - position: Collaborator
+        company: Long-Horizon Agent Trajectory Data-Synthesis Pipeline
+        start_date: 2026-08
+        end_date: present
+        location: DeepWisdom
+        summary:
+        highlights:
+          - "Surveyed and compared mainstream long-horizon agent benchmarks, distilling their trajectory data-synthesis schemes and their test-task complexity along steps, context, tools, and environment into a comparative analysis (covering 12+ synthetic-trajectory works)"
+          - "Identified the limitations of existing benchmarks in data scale and real-execution environments, providing design guidance for how the pipeline should generate longer-horizon, more realistic trajectory data"
     publications:
       - date: 2026-03
         title: "IPV-Bench: Benchmarking Image Protection Methods under Diverse Image-to-Video Generation Scenarios"
@@ -55,28 +60,29 @@ cv:
           - Zhen Sun
           - Zongmin Zhang
           - Jiaheng Wei
-          - Xinlei He
-        journal: arXiv:2603.26154 (Under review at AAAI 2027)
+          - Xinlei He†
+        journal: arXiv:2603.26154 (under review at AAAI 2027)
         url: https://arxiv.org/abs/2603.26154
-        summary: The first systematic benchmark for image protection methods in image-to-video (I2V) generation scenarios — unifying evaluation protocols and generation settings, covering fidelity–effectiveness trade-offs, cross-model transfer, and robustness across diverse image domains, enabling reproducible and comparable evaluation.
+        summary: The first systematic benchmark for image protection methods in image-to-video (I2V) generation scenarios — unifying evaluation protocols and generation settings, covering fidelity–effectiveness trade-offs, cross-model transfer, and robustness across diverse image domains. † Corresponding author.
       - date: 2025-01
         title: Programming Guide for Solving Constraint Satisfaction Problems with Tensor Networks
         authors:
           - Xuanzhao Gao
           - "*Xiaofeng Li*"
-          - Jinguo Liu
+          - Jinguo Liu†
         journal: arXiv:2501.00227
         url: https://arxiv.org/abs/2501.00227
-        summary: A practical programming guide demonstrating how to formulate and solve constraint satisfaction problems (e.g., graph coloring, SAT) with tensor-network-based methods, with reproducible Julia implementations.
+        summary: A practical programming guide demonstrating how to formulate and solve constraint satisfaction problems (e.g., graph coloring, SAT) with tensor-network-based methods, with reproducible Julia implementations. † Corresponding author.
+    awards:
+      - bullet: "Third Prize, Huawei Ascend Operator Challenge (S8), 2026"
+      - bullet: "Merit Award, Undergraduate Research Project Competition, HKUST(GZ), 2024"
+      - bullet: "Dean's List, HKUST(GZ), Spring 2025"
     skills:
       - label: Programming Languages
         details: Python, Shell
       - label: Deep Learning & LLMs
         details: PyTorch, Transformers, HuggingFace, LLM APIs & inference engineering
-      - label: Computer Vision
-        details: GroundingDINO, SAM2/SAM3, Mask2Former
       - label: Tools
         details: Git/GitHub, Claude Code, Linux, PowerPoint
-    languages:
-      - bullet: "Chinese — Native"
-      - bullet: "English — IELTS 7.5"
+      - label: Languages
+        details: Chinese (native), English (fluent)
